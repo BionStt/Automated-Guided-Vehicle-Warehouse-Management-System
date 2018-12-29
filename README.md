@@ -11,7 +11,7 @@
 ![image](https://user-images.githubusercontent.com/42165236/50536183-072e0580-0b95-11e9-9b43-700f1b460136.png)
 
 ### <C#화면 디자인>
-![image](https://user-images.githubusercontent.com/42165236/50536353-de0e7480-0b96-11e9-8064-7880bbfd8bd0.png)
+![image](https://user-images.githubusercontent.com/42165236/50536455-33975100-0b98-11e9-82d8-dd8765f5806f.png)
 ![image](https://user-images.githubusercontent.com/42165236/50536351-d058ef00-0b96-11e9-90c6-31b0c427dd98.png)
 ![image](https://user-images.githubusercontent.com/42165236/50536353-de0e7480-0b96-11e9-8064-7880bbfd8bd0.png)
 
@@ -25,4 +25,5 @@
  둘째로 처음에 RC-Car를 움직일 때 사용한 전압은 1.5V 건전지 6개와 9V 건전지 1개를 각각 모터드라이브와 아두이노에 인가하였습니다. 시험을 거듭할수록 모터의 힘이 눈에 띄게 낮아지고, 그 전력만으로는 나중에 장착할 서보모터나 초음파센서를 다룰 수 없었습니다. 현재 사용하고 있는 모터드라이버의 허용 전압은 35V입니다. 건전지를 7V AA사이즈의 리튬 건전지를 사용하였으면, 힘이 부족하여 RC-Car가 동작하지 않을 일은 없었을 것이라 생각합니다.
 
 ### <시연 영상>
-Link: [Google][googlelink] [googlelink]: https://google.com "Go google"
+Youtube : https://www.youtube.com/watch?v=kftoN6iXKBE&feature=youtu.be
+
