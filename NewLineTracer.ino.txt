@@ -1,0 +1,224 @@
+#include <Servo.h>
+#include <string.h>  
+
+#include "ESP8266.h"
+#include <SoftwareSerial.h>  
+
+
+#define SSID        "3iptime"  
+
+#define PASSWORD    ""  
+
+#define SERVERIP   "192.168.0.16"
+SoftwareSerial mySerial(11, 10); /* RX:D11, TX:D10 */    
+Servo microServo;    //서보모터 객체 선언
+const int servoPin = 9;    //서보모터 제어핀 할당
+int angle = 90;    //각도 변수 선언
+
+#define R_CH 5
+#define L_CH 6
+
+#define RF 2
+#define RB 4
+#define LF 3
+#define LB 7
+
+#define leftLineSensor A0
+#define middleLineSensor A1
+#define rightLineSensor A2
+
+#define BLACK 300
+#define SIDE 100
+int speed = 80; // 기본속도
+
+int mode = 0;
+
+int echo = 12;  // 초음파
+int trig = 13;
+
+int index = 0;
+void setup() {
+
+  Serial.setTimeout(5000);  // wifi
+  mySerial.begin(9600);
+
+  boolean connected=false;  
+   for(int i=0;i<10;i++)  
+   {  
+       if(connectWiFi())  
+       {  
+         connected = true;  
+         break;  
+       }  
+   }  
+     
+   if (!connected){while(1);}  
+   delay(5000);  
+    
+   mySerial.println("AT+CIPMUX=0"); 
+  //핀을 초기화합니다. 
+  pinMode(R_CH, OUTPUT);
+  pinMode(L_CH, OUTPUT);
+  pinMode(RF, OUTPUT);
+  pinMode(RB, OUTPUT);
+  pinMode(LF, OUTPUT);
+  pinMode(LB, OUTPUT);
+  analogWrite(L_CH, 0);
+  analogWrite(R_CH, 0);
+  pinMode(leftLineSensor, INPUT);
+  pinMode(middleLineSensor, INPUT);
+  pinMode(rightLineSensor, INPUT);
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  microServo.attach(servoPin);    //서보모터 초기화
+  Serial.begin(9600);
+  delay(7000);
+}
+
+void loop() {
+  if(analogRead(middleLineSensor) > BLACK && analogRead(leftLineSensor) > BLACK && analogRead(rightLineSensor) > BLACK) mode=4;
+  else if (analogRead(leftLineSensor) > BLACK ) mode = 2;
+  else if (analogRead(rightLineSensor) > BLACK ) mode = 3;
+  else if (analogRead(middleLineSensor) > BLACK ) mode=1;
+  switch(mode)
+  {
+    case 0:
+      Mode_Stop(); // 정지
+      break;
+    case 1:
+      Mode_Go();   // 출발
+      break;
+    case 2:
+      Mode_Left(); // 좌회전
+      break;
+    case 3:
+      Mode_Right();// 우회전
+      break;
+    case 4:        // 정지 후 물건 하차 후 턴
+      Mode_Stop(); 
+      delay(1000);
+      TakeDown();
+      Mode_Turn();
+      delay(1300);
+
+      print();
+      Mode_Go();
+      delay(300);
+      break;
+  }
+}
+
+void print()
+{
+   String cmd = "AT+CIPSTART=\"TCP\",\"";
+   cmd += SERVERIP;
+   cmd += "\",80";
+   Serial.println(cmd);  
+     mySerial.println(cmd);  
+     if(mySerial.find("Error"))  
+    {  
+      Serial.println( "TCP connect error" );  
+      return;  
+    }  
+    cmd = "GET /insert_data.php?num=1\r\n";  
+    mySerial.print("AT+CIPSEND=");  
+    mySerial.println(cmd.length());  
+          
+    Serial.println(cmd); 
+    
+    if(mySerial.find(">"))  
+     {  
+       Serial.print(">");  
+     }
+       else  
+     {  
+       mySerial.println("AT+CIPCLOSE");  
+       Serial.println("connect timeout");  
+       delay(1000);  
+       return;  
+     }  
+         
+     mySerial.print(cmd);  
+     delay(2000);  
+     //Serial.find("+IPD");  
+     while (Serial.available())  
+     {  
+       char c = Serial.read();  
+       mySerial.write(c);  
+       if(c=='\r') mySerial.print('\n');  
+     }  
+     Serial.println("====");  
+     delay(1000);  
+}
+void Mode_Stop()
+{
+    digitalWrite(RB,HIGH);
+    digitalWrite(RF,HIGH);
+    digitalWrite(LB,HIGH);
+    digitalWrite(LF,HIGH); 
+}
+
+void Mode_Go()
+{
+    digitalWrite(RB,LOW);
+    digitalWrite(RF,HIGH);
+    digitalWrite(LB,LOW);
+    digitalWrite(LF,HIGH);
+    //모터A 역회전
+    analogWrite(R_CH, speed);
+
+    //모터B 정회전
+    analogWrite(L_CH, speed);
+}
+void Mode_Left()
+{
+    digitalWrite(RB,LOW);
+    digitalWrite(RF,HIGH);
+    digitalWrite(LB,HIGH);
+    digitalWrite(LF,LOW);
+    //모터A 정회전
+    analogWrite(R_CH, speed+20);
+
+    //모터B 역회전
+    analogWrite(L_CH, speed);
+    
+}
+void Mode_Right()
+{
+    digitalWrite(RB,HIGH);
+    digitalWrite(RF,LOW);
+    digitalWrite(LB,LOW);
+    digitalWrite(LF,HIGH);
+    //모터A 역회전
+    analogWrite(R_CH, speed+20);
+
+    //모터B 정회전
+    analogWrite(L_CH, speed);
+}
+void Mode_Turn()
+{
+    digitalWrite(RB,HIGH);
+    digitalWrite(RF,LOW);
+    digitalWrite(LB,LOW);
+    digitalWrite(LF,HIGH);
+    //모터A 역회전
+    analogWrite(R_CH, speed+40);
+
+    //모터B 정회전
+    analogWrite(L_CH, speed+40);
+}
+
+void TakeDown()
+{
+  for (angle = 90; angle < 170; angle++)
+    {
+        microServo.write(angle);    //angle(각도)값으로 서보모터 제어
+        delay(5);                    //delay로 각도의 변화 속도를 조절
+    }
+    delay(100);
+    for (angle = 170; angle > 90; angle--)
+    {
+        microServo.write(angle);    //angle(각도)값으로 서보모터 제어
+        delay(5);                    //delay로 각도의 변화 속도를 조절
+    }
+}

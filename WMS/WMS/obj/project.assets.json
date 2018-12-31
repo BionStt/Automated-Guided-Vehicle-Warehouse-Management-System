@@ -1,0 +1,571 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "Google.Protobuf/3.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroFramework/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.Design": "1.2.0.3",
+          "MetroFramework.Fonts": "1.2.0.3",
+          "MetroFramework.RunTime": "1.2.0.3"
+        }
+      },
+      "MetroFramework.Design/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        }
+      },
+      "MetroFramework.Fonts/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "compile": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        }
+      },
+      "MetroFramework.RunTime/1.2.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        }
+      },
+      "MySql.Data/8.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.5.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.ComponentModel",
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration",
+          "System.Configuration.Install",
+          "System.Data",
+          "System.Drawing",
+          "System.Drawing.Design",
+          "System.Management",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net452/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Data.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "Google.Protobuf/3.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroFramework/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.Design": "1.2.0.3",
+          "MetroFramework.Fonts": "1.2.0.3",
+          "MetroFramework.RunTime": "1.2.0.3"
+        }
+      },
+      "MetroFramework.Design/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        }
+      },
+      "MetroFramework.Fonts/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "compile": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        }
+      },
+      "MetroFramework.RunTime/1.2.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        }
+      },
+      "MySql.Data/8.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.5.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.ComponentModel",
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration",
+          "System.Configuration.Install",
+          "System.Data",
+          "System.Drawing",
+          "System.Drawing.Design",
+          "System.Management",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net452/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Data.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "Google.Protobuf/3.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroFramework/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.Design": "1.2.0.3",
+          "MetroFramework.Fonts": "1.2.0.3",
+          "MetroFramework.RunTime": "1.2.0.3"
+        }
+      },
+      "MetroFramework.Design/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        }
+      },
+      "MetroFramework.Fonts/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "compile": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        }
+      },
+      "MetroFramework.RunTime/1.2.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        }
+      },
+      "MySql.Data/8.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.5.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.ComponentModel",
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration",
+          "System.Configuration.Install",
+          "System.Data",
+          "System.Drawing",
+          "System.Drawing.Design",
+          "System.Management",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net452/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Data.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "Google.Protobuf/3.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroFramework/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.Design": "1.2.0.3",
+          "MetroFramework.Fonts": "1.2.0.3",
+          "MetroFramework.RunTime": "1.2.0.3"
+        }
+      },
+      "MetroFramework.Design/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Design.dll": {}
+        }
+      },
+      "MetroFramework.Fonts/1.2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "MetroFramework.RunTime": "1.2.0.3"
+        },
+        "compile": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MetroFramework.Fonts.dll": {}
+        }
+      },
+      "MetroFramework.RunTime/1.2.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/MetroFramework.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        }
+      },
+      "MySql.Data/8.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.5.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.ComponentModel",
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration",
+          "System.Configuration.Install",
+          "System.Data",
+          "System.Drawing",
+          "System.Drawing.Design",
+          "System.Management",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net452/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Google.Protobuf/3.5.1": {
+      "sha512": "j/gbpRZ68sgvdi/vXI39Cj/jWG4d1dtDqfWbkjC9dErNWu/dFcIlq1LIgLscea+llZ6nzm06wz/JGziOegAL7Q==",
+      "type": "package",
+      "path": "google.protobuf/3.5.1",
+      "files": [
+        ".signature.p7s",
+        "google.protobuf.3.5.1.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/netstandard1.0/Google.Protobuf.dll",
+        "lib/netstandard1.0/Google.Protobuf.xml"
+      ]
+    },
+    "MetroFramework/1.2.0.3": {
+      "sha512": "EvVfgE6KLUR9wsjxaTm8edT9n0tbltPo6lafCHJNV3RaAD6Ekv6VlOV7RfwmXkn2ERc9S8Kz8U106ocRqTKhrQ==",
+      "type": "package",
+      "path": "metroframework/1.2.0.3",
+      "files": [
+        ".signature.p7s",
+        "Content/MetroFramework.txt",
+        "README.TXT",
+        "metroframework.1.2.0.3.nupkg.sha512",
+        "metroframework.nuspec"
+      ]
+    },
+    "MetroFramework.Design/1.2.0.3": {
+      "sha512": "KJLEsUA/MrgnpGZHOP0Ckqxi/qfZsJtUlMAZyFgpr9VeRpNJXyrmxps9ttLEAvR5RAfxgR0Np1yDChZljnuNSA==",
+      "type": "package",
+      "path": "metroframework.design/1.2.0.3",
+      "files": [
+        ".signature.p7s",
+        "README.TXT",
+        "Tools/install.ps1",
+        "lib/net40/MetroFramework.Design.dll",
+        "metroframework.design.1.2.0.3.nupkg.sha512",
+        "metroframework.design.nuspec"
+      ]
+    },
+    "MetroFramework.Fonts/1.2.0.3": {
+      "sha512": "I5LsJC/Wy7t8GyjjwWOtu+tJfK0v6DmsrQNiJ6JeqSO44+CilEmlkW1be5lcBiRshgnYhVBbr9AU2eqcQBDJTw==",
+      "type": "package",
+      "path": "metroframework.fonts/1.2.0.3",
+      "files": [
+        ".signature.p7s",
+        "README.TXT",
+        "lib/net40/MetroFramework.Fonts.dll",
+        "metroframework.fonts.1.2.0.3.nupkg.sha512",
+        "metroframework.fonts.nuspec"
+      ]
+    },
+    "MetroFramework.RunTime/1.2.0.3": {
+      "sha512": "+vF5fhDqBQHqEIJGsyQn+JupNEYwfoUo2WjO1WQsyZ79SQKAp27/XLMQkAWm1AmxBAsvW9BEOJLhA+h3WrOkWA==",
+      "type": "package",
+      "path": "metroframework.runtime/1.2.0.3",
+      "files": [
+        ".signature.p7s",
+        "README.TXT",
+        "lib/net40-Client/MetroFramework.dll",
+        "metroframework.runtime.1.2.0.3.nupkg.sha512",
+        "metroframework.runtime.nuspec"
+      ]
+    },
+    "MetroModernUI/1.4.0": {
+      "sha512": "b6kzzrXxiTZsKXTzh5P3Rza8oT2qS2XXu/fhCI9AFxbQPZ1phQnU41e2CaooSWvIzWOiMFnM10kpbmc24cw9gw==",
+      "type": "package",
+      "path": "metromodernui/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net/MetroFramework.Design.dll",
+        "lib/net/MetroFramework.Fonts.dll",
+        "lib/net/MetroFramework.dll",
+        "metromodernui.1.4.0.nupkg.sha512",
+        "metromodernui.nuspec"
+      ]
+    },
+    "MySql.Data/8.0.13": {
+      "sha512": "mXfjg2pOdzpyd4wkXZPKYcNluzV68ggAO/LPcT7iuzU5kDS7livUDR8IsKkarEhBmRxBy0XmBnUOkEWJvfOW9Q==",
+      "type": "package",
+      "path": "mysql.data/8.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MySql.Data.dll",
+        "lib/net452/MySql.Data.xml",
+        "lib/netcoreapp2.0/MySql.Data.dll",
+        "lib/netcoreapp2.0/MySql.Data.xml",
+        "lib/netstandard1.6/MySql.Data.dll",
+        "lib/netstandard1.6/MySql.Data.xml",
+        "lib/netstandard2.0/MySql.Data.dll",
+        "lib/netstandard2.0/MySql.Data.xml",
+        "mysql.data.8.0.13.nupkg.sha512",
+        "mysql.data.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "Google.Protobuf >= 3.5.1",
+      "MetroFramework >= 1.2.0.3",
+      "MetroModernUI >= 1.4.0",
+      "MySql.Data >= 8.0.13"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\daw35\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\2_스마트 물품 자동 운반\\3. 소스\\WMS\\WMS\\WMS.csproj",
+      "projectName": "WMS",
+      "projectPath": "F:\\2_스마트 물품 자동 운반\\3. 소스\\WMS\\WMS\\WMS.csproj",
+      "packagesPath": "C:\\Users\\daw35\\.nuget\\packages\\",
+      "outputPath": "F:\\2_스마트 물품 자동 운반\\3. 소스\\WMS\\WMS\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\daw35\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.5.1, )"
+          },
+          "MetroFramework": {
+            "target": "Package",
+            "version": "[1.2.0.3, )"
+          },
+          "MetroModernUI": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.13, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

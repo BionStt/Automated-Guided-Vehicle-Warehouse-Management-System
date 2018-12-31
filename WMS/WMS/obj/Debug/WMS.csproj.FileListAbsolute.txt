@@ -1,0 +1,50 @@
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\WMS.exe.config
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\WMS.exe
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\WMS.pdb
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.Form2.resources
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.cache
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.csproj.CoreCompileInputs.cache
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.exe
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.pdb
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.Home.resources
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\MetroFramework.Design.dll
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\MetroFramework.dll
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\MySql.Data.dll
+C:\Users\daw35\source\repos\WMS\WMS\bin\Debug\Google.Protobuf.dll
+C:\Users\daw35\source\repos\WMS\WMS\obj\Debug\WMS.csproj.CopyComplete
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\WMS.exe.config
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\WMS.exe
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\WMS.pdb
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\Google.Protobuf.dll
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\MetroFramework.Design.dll
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\MetroFramework.dll
+C:\Users\안성연\source\repos\WMS\WMS\bin\Debug\MySql.Data.dll
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.Home.resources
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.Form2.resources
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.cache
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.csproj.CoreCompileInputs.cache
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.csproj.CopyComplete
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.exe
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.pdb
+C:\Users\안성연\source\repos\WMS\WMS\obj\Debug\WMS.csprojAssemblyReference.cache
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\WMS.exe.config
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\WMS.exe
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\WMS.pdb
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\Google.Protobuf.dll
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\MetroFramework.Design.dll
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\MetroFramework.Fonts.dll
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\MetroFramework.dll
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\bin\Debug\MySql.Data.dll
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.csprojAssemblyReference.cache
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.Home.resources
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.Form2.resources
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.Properties.Resources.resources
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.csproj.GenerateResource.cache
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.csproj.CoreCompileInputs.cache
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.csproj.CopyComplete
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.exe
+F:\2_스마트 물품 자동 운반\3. 소스\WMS\WMS\obj\Debug\WMS.pdb
